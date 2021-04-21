@@ -44,7 +44,7 @@ body{
         }
     }
     .boton{
-        @include boton($secundario);
+        @include boton($principal);
     }
 }
 .hero{
@@ -161,8 +161,67 @@ body{
             flex: 0 1 calc(25% - 1rem);
 
         }
-        .info-curso{
-            padding: 1rem;
+        
+    }
+}
+.info-curso{
+    padding: 1rem;
+    
+    h4 {
+        margin: 0;
+        font-size: 1.4rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .precio{
+        display: flex;
+        justify-content: space-between;
+
+        .regular{
+            text-decoration: line-through;
+            color: red;
+            font-size: 1.3rem;
+        }
+
+        .oferta{
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: green;
         }
     }
+    .boton{
+        @include boton($secundario);
+    }
+}
+
+.footer{
+    margin-top: 1rem;
+    border-top: .1rem solid darken($gris, 15%);
+    padding-top: 2rem;
+    
+    .contenedor-footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @include telefono(){
+            flex-direction: row;
+        }
+    /* nav{
+            display: flex;
+            flex-direction: column;
+            @include tablet(){
+                flex: 1 0 50%;
+                
+            }
+            
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        } */
+    }
+}
+.menu{
+    @include menus();
 }

@@ -5,9 +5,9 @@
     padding: .5rem 1rem;
     margin-top: 1rem;
     text-align: center;
-    border-radius: 1rem;
     color: $blanco;
     text-decoration: none;
+    font-size: 1.4rem;
 }
 
 @mixin box-sizing($box-model){
@@ -40,5 +40,21 @@
 @mixin desktop{
     @media only screen and (min-width: #{$desktop}){
         @content;
+    }
+}
+
+/*Menus de navegacion*/
+@mixin menus() {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    flex: 1;
+    @include tablet(){
+        flex: 0 1 calc(30%-rem);
+    }
+    a{
+        color: $negro;
+        text-decoration: none;;
+        margin-bottom: .5rem;
     }
 }

@@ -6,6 +6,7 @@ Colores */
 /*Botones*/
 /*Degradado*/
 /* Media Queris */
+/*Menus de navegacion*/
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -65,13 +66,13 @@ body {
 
 .carrito-compras .boton {
   display: block;
-  background-color: #741d51;
+  background-color: #33C3F0;
   padding: .5rem 1rem;
   margin-top: 1rem;
   text-align: center;
-  border-radius: 1rem;
   color: #ffffff;
   text-decoration: none;
+  font-size: 1.4rem;
 }
 
 .hero {
@@ -265,6 +266,105 @@ body {
   }
 }
 
-.cursos .curso .info-curso {
+.info-curso {
   padding: 1rem;
+}
+
+.info-curso h4 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.info-curso p {
+  font-size: 1.2rem;
+}
+
+.info-curso .precio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.info-curso .precio .regular {
+  text-decoration: line-through;
+  color: red;
+  font-size: 1.3rem;
+}
+
+.info-curso .precio .oferta {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: green;
+}
+
+.info-curso .boton {
+  display: block;
+  background-color: #741d51;
+  padding: .5rem 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.footer {
+  margin-top: 1rem;
+  border-top: 0.1rem solid #cccccc;
+  padding-top: 2rem;
+}
+
+.footer .contenedor-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  /* nav{
+            display: flex;
+            flex-direction: column;
+            @include tablet(){
+                flex: 1 0 50%;
+                
+            }
+            
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        } */
+}
+
+@media only screen and (min-width: 480px) {
+  .footer .contenedor-footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    flex: 0 1 calc(30%-rem);
+  }
+}
+
+.menu a {
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: .5rem;
 }
