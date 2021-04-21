@@ -1,0 +1,63 @@
+/* Variables 
+Colores */
+/*Fuentes*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Releway", sans-serif;
+}
+
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.oculto {
+  display: none;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header .logo {
+  padding: 1.4rem 0;
+}
+
+.carrito-compras {
+  position: relative;
+}
+
+.carrito-compras:hover .contenido {
+  display: block;
+  background-color: #f2f2f2;
+  position: absolute;
+  right: 0;
+  padding: 1rem;
+  max-width: 32rem;
+}
+
+.carrito-compras:hover .contenido img {
+  max-width: 15rem;
+}
+
+.carrito-compras .boton {
+  display: block;
+  background-color: #33C3F0;
+  padding: .5rem 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+}
